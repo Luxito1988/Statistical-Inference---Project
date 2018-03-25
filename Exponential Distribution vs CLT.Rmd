@@ -1,7 +1,7 @@
 ---
 Title: Investigate the exponential distribution in R and compare it with the Central Limit Theorem
 Author: "Luis Valladares"
-Date: "March 24, 2018"
+Date: "March 24th, 2018"
 Output: html_document
 ---
 
@@ -79,10 +79,7 @@ normal distribution that has a mean of lambda^-1 and standard deviation of
 ```{r}
 library(ggplot2)
 ggplot(data.frame(y=simMeans), aes(x=y)) + 
-  geom_histogram(aes(y=..density..), binwidth=0.2, fill="#0072B2", 
-                 color="black") +
-  stat_function(fun=dnorm, arg=list(mean=lambda^-1, 
-                                    sd=(lambda*sqrt(exponentials))^-1), 
-                size=2) +
+  geom_histogram(aes(y=..density..), binwidth=0.2, fill="orange", color="black") +
+  stat_function(fun=dnorm, arg=list(mean=lambda^-1, sd=(lambda*sqrt(exponentials))^-1), size=2) +
   labs(title="Plot of the Simulations", x="Simulation Mean")
 ```
