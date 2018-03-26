@@ -1,7 +1,7 @@
 ---
 Title: Investigate the exponential distribution in R and compare it with the Central Limit Theorem
 Author: "Luis Valladares"
-Date: "March 24th, 2018"
+Date: "March 25th, 2018"
 Output: html_document
 ---
 
